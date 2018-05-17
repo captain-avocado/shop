@@ -7,21 +7,32 @@ export default function search() {
 
     const searchBtn = document.getElementById('search');
 
+    menu.addEventListener('transitionend', e => {
+        if (menu === e.target) {
+            searchIcon.style.display = 'none';
+            menu.style.display = 'none';
+            
+            closeIcon.style.display = 'block';
+            searchRow.style.display = 'flex';
+        }
+    });
+
+    searchRow.addEventListener('transitionend', e => {
+        if (searchRow === e.target) {
+            searchRow.style.display = '';
+            searchIcon.style.display = '';
+            menu.style.display = '';
+            closeIcon.style.display = '';
+        }
+    });
+
     searchIcon.addEventListener('click', e => {
         e.preventDefault();
 
-        menu.style.opacity = 0;
         searchRow.style.opacity = 1;
-
-        menu.addEventListener('transitionend', e => {
-            searchIcon.style.display = 'none';
-            menu.style.display = 'none';
-
-            closeIcon.style.display = 'block';
-            searchRow.style.display = 'flex';
-            searchRow.style.opacity = 1;
-
-        });
+        menu.style.opacity = 0;
+        closeIcon.style.opacity = 1;
+        searchIcon.style.opacity = 0;
 
         console.log('Открытие строки...');
 
@@ -30,15 +41,10 @@ export default function search() {
     closeIcon.addEventListener('click', e => {
         e.preventDefault();
 
-        searchRow.style.opacity = 0;
         menu.style.opacity = 1;
-
-        searchRow.addEventListener('transitionend', e => {
-            searchRow.style.display = '';
-            searchIcon.style.display = '';
-            menu.style.display = '';
-            closeIcon.style.display = '';
-        });
+        searchRow.style.opacity = 0;
+        closeIcon.style.opacity = 0;
+        searchIcon.style.opacity = 1;
 
         console.log('Закрытие строки...');
 
