@@ -14,18 +14,22 @@
             <div class="logo__name">дасстрой</div>
             <div class="logo__descr">Внимание к деталям</div>
           </div></a></div>
-      <div class="contacts header__contacts">
-        <div class="contacts__row"><img class="contacts__icon" src="images/phone.png">
+      <ul class="contacts header__contacts">
+        <li class="contacts__row">
+          <svg class="contacts__icon">
+            <use xlink:href="images/sprite.svg#phone"></use>
+          </svg>
           <div class="contacts__number">+7 (800) 555-35-35</div>
-        </div>
-        <div class="contacts__row">
+        </li>
+        <li class="contacts__row">
           <div class="contacts__descr">7 дней в неделю с 9:00 до 19:00</div>
-        </div>
-      </div>
-      <div class="cart header__cart">
-        <div class="cart__goods">
-          <div class="cart__num">2</div><img class="cart__icon" src="images/cart.png">
-        </div>
+        </li>
+      </ul>
+      <div class="cart header__cart"><a class="cart__goods" href="#">
+          <div class="cart__num">2</div>
+          <svg class="cart__icon">
+            <use xlink:href="images/sprite.svg#cart"></use>
+          </svg></a>
         <div class="cart__descr">Ваша корзина</div>
       </div>
     </header>
@@ -38,11 +42,20 @@
         <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
         <li class="menu__item"> <a class="menu__link" href="#">О компании</a></li>
       </ul>
-      <div class="search-row nav__search-row"><img class="search-row__icon" src="images/search-black.png">
+      <div class="search-row nav__search-row">
+        <svg class="search-row__icon">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>
         <input class="search-row__input" type="text" placeholder="Введите ключевое слово">
         <button class="search-row__btn" type="submit" id="search">Поиск</button>
       </div>
-      <div class="search nav__search"><a class="search__link" href="#" id="open"><img class="search__icon" src="images/search.png"></a><a class="search__link" href="#" id="close"><img class="search__icon" src="images/close.png"></a></div>
+      <div class="search nav__search"><a class="search__link" href="#" id="open">
+          <svg class="search__icon">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg></a><a class="search__link" href="#" id="close">
+          <svg class="search__icon">
+            <use xlink:href="images/sprite.svg#close"></use>
+          </svg></a></div>
     </nav>
     <script src="scripts/main.bundle.js"></script>
   </body>

@@ -10,16 +10,18 @@ block content
           .logo__text
             .logo__name дасстрой
             .logo__descr Внимание к деталям
-      .contacts.header__contacts
-        .contacts__row
-          img(src="images/phone.png").contacts__icon
+      ul.contacts.header__contacts
+        li.contacts__row
+          svg.contacts__icon
+            use(xlink:href=`images/sprite.svg#phone`)
           .contacts__number +7 (800) 555-35-35
-        .contacts__row
+        li.contacts__row
           .contacts__descr 7 дней в неделю с 9:00 до 19:00
       .cart.header__cart
-        .cart__goods
+        a(href="#").cart__goods
           .cart__num 2
-          img(src="images/cart.png").cart__icon
+          svg.cart__icon
+            use(xlink:href=`images/sprite.svg#cart`)
         .cart__descr Ваша корзина
     nav.nav
       ul.menu.nav__list
@@ -36,12 +38,15 @@ block content
         li.menu__item 
           a(href="#").menu__link О компании
       .search-row.nav__search-row
-          img(src="images/search-black.png").search-row__icon
+          svg.search-row__icon
+            use(xlink:href=`images/sprite.svg#search`)
           input(type="text", placeholder="Введите ключевое слово").search-row__input
           button(type="submit").search-row__btn#search Поиск
       .search.nav__search
         a(href="#").search__link#open
-          img(src="images/search.png").search__icon
+          svg.search__icon
+            use(xlink:href=`images/sprite.svg#search`)
         a(href="#").search__link#close
-            img(src="images/close.png").search__icon
+          svg.search__icon
+            use(xlink:href=`images/sprite.svg#close`)
     script(src="scripts/main.bundle.js")

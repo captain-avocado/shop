@@ -7,11 +7,14 @@
   &__row {
     display: flex;
     align-items: center;
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
   }
 
   &__icon {
-    width: 23px;
-    height: 23px;
+    width: 16px;
+    height: 18px;
   }
 
   &__number {

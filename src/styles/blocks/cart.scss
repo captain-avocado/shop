@@ -4,6 +4,7 @@
   align-items: center;
 
   &__goods {
+    display: block;
     margin-right: 5px;
 
     position: relative;
@@ -27,6 +28,9 @@
   &__icon {
     width: 25px;
     height: 25px;
+    &:hover {
+      fill: $bg-red;
+    }
   }
 
 }
