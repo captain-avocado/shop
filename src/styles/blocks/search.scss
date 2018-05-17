@@ -1,8 +1,18 @@
 .search {
   
-  &__icon {
-    width: 25px;
-    height: 25px;
+  &__link {
+    display: block;
+    width: 20px;
+    height: 20px;
   }
 
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+#close {
+  display: none;
 }

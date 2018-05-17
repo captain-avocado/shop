@@ -35,7 +35,13 @@ block content
           a(href="#").menu__link Доставка и оплата
         li.menu__item 
           a(href="#").menu__link О компании
+      .search-row.nav__search-row
+          img(src="images/search-black.png").search-row__icon
+          input(type="text", placeholder="Введите ключевое слово").search-row__input
+          button(type="submit").search-row__btn#search Поиск
       .search.nav__search
-        a(href="#").search__link
-          img(src="images/search.png").search__icon#search 
+        a(href="#").search__link#open
+          img(src="images/search.png").search__icon
+        a(href="#").search__link#close
+            img(src="images/close.png").search__icon
     script(src="scripts/main.bundle.js")

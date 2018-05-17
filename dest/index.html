@@ -38,7 +38,11 @@
         <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
         <li class="menu__item"> <a class="menu__link" href="#">О компании</a></li>
       </ul>
-      <div class="search nav__search"><a class="search__link" href="#"><img class="search__icon" src="images/search.png" id="search"></a></div>
+      <div class="search-row nav__search-row"><img class="search-row__icon" src="images/search-black.png">
+        <input class="search-row__input" type="text" placeholder="Введите ключевое слово">
+        <button class="search-row__btn" type="submit" id="search">Поиск</button>
+      </div>
+      <div class="search nav__search"><a class="search__link" href="#" id="open"><img class="search__icon" src="images/search.png"></a><a class="search__link" href="#" id="close"><img class="search__icon" src="images/close.png"></a></div>
     </nav>
     <script src="scripts/main.bundle.js"></script>
   </body>

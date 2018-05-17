@@ -3,11 +3,16 @@
   padding-left: 10%;
   padding-right: 10%;
 
-  // min-height: 70px;
+  min-height: 70px;
+
   background-color: $bg-red;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &__search-row {
+    margin-right: 20px;
+  }
 
 }
