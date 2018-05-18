@@ -8,7 +8,11 @@
     height: 10px;
     background-color: $white;
     border-radius: 50%;
-    transition: width .2s, height .2s;
+    transition: width .2s, height .2s, background-color .5s;
+
+    &:hover {
+      background-color: $text-black;
+    }
     
     &:not(:last-of-type) {
       margin-right: 25px;
