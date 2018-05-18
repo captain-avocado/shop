@@ -6,7 +6,10 @@
   &__goods {
     display: block;
     margin-right: 5px;
-
+    &:hover .cart__icon {
+      fill: $bg-red;
+      transition: fill .2s;
+    }
     position: relative;
   }
 
@@ -28,9 +31,6 @@
   &__icon {
     width: 25px;
     height: 25px;
-    &:hover {
-      fill: $bg-red;
-    }
   }
 
 }

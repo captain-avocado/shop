@@ -7,8 +7,29 @@ body {
 }
 
 .container {
-    width: 90%;
+    display: block;
+    height: 100%;
+    width: 1260px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
+    &_nav {
+        height: fit-content;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_header {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        min-height: 127.5px;
+    }
+}
+
+.main-content {
+    margin-top: 60px;
 }

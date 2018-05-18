@@ -4,49 +4,97 @@ block head
 block variables
 block content
     header.header
-      .logo.header__logo
-        a(href="#").logo__link
-          img(src="images/logo.png").logo__icon
-          .logo__text
-            .logo__name дасстрой
-            .logo__descr Внимание к деталям
-      ul.contacts.header__contacts
-        li.contacts__row
-          svg.contacts__icon
-            use(xlink:href=`images/sprite.svg#phone`)
-          .contacts__number +7 (800) 555-35-35
-        li.contacts__row
-          .contacts__descr 7 дней в неделю с 9:00 до 19:00
-      .cart.header__cart
-        a(href="#").cart__goods
-          .cart__num 2
-          svg.cart__icon
-            use(xlink:href=`images/sprite.svg#cart`)
-        .cart__descr Ваша корзина
+      .container.container_header
+        .logo.header__logo
+          a(href="#").logo__link
+            img(src="images/logo.png").logo__icon
+            .logo__text
+              .logo__name дасстрой
+              .logo__descr Внимание к деталям
+        ul.contacts.header__contacts
+          li.contacts__row
+            svg.contacts__icon
+              use(xlink:href=`images/sprite.svg#phone`)
+            .contacts__number +7 (800) 555-35-35
+          li.contacts__row
+            .contacts__descr 7 дней в неделю с 9:00 до 19:00
+        .cart.header__cart
+          a(href="#").cart__goods
+            .cart__num 2
+            svg.cart__icon
+              use(xlink:href=`images/sprite.svg#cart`)
+          .cart__descr Ваша корзина
     nav.nav
-      ul.menu.nav__list
-        li.menu__item 
-          a(href="#").menu__link Главная
-        li.menu__item
-          a(href="#").menu__link Услуги
-        li.menu__item
-          a(href="#").menu__link Товары
-        li.menu__item
-          a(href="#").menu__link Бренды
-        li.menu__item
-          a(href="#").menu__link Доставка и оплата
-        li.menu__item 
-          a(href="#").menu__link О компании
-      .search-row.nav__search-row
-          svg.search-row__icon
-            use(xlink:href=`images/sprite.svg#search`)
-          input(type="text", placeholder="Введите ключевое слово").search-row__input
-          button(type="submit").search-row__btn#search Поиск
-      .search.nav__search
-        a(href="#").search__link#open
-          svg.search__icon
-            use(xlink:href=`images/sprite.svg#search`)
-        a(href="#").search__link#close
-          svg.search__icon
-            use(xlink:href=`images/sprite.svg#close`)
+      .container.container_nav
+        ul.menu.nav__list
+          li.menu__item 
+            a(href="#").menu__link Главная
+          li.menu__item
+            a(href="#").menu__link Услуги
+          li.menu__item
+            a(href="#").menu__link Товары
+          li.menu__item
+            a(href="#").menu__link Бренды
+          li.menu__item
+            a(href="#").menu__link Доставка и оплата
+          li.menu__item 
+            a(href="#").menu__link О компании
+        .search-row.nav__search-row
+            svg.search-row__icon
+              use(xlink:href=`images/sprite.svg#search`)
+            input(type="text", placeholder="Введите ключевое слово").search-row__input
+            button(type="submit").search-row__btn#search Поиск
+        .search.nav__search
+          a(href="#").search__link#open
+            svg.search__icon
+              use(xlink:href=`images/sprite.svg#search`)
+          a(href="#").search__link#close
+            svg.search__icon
+              use(xlink:href=`images/sprite.svg#cross`)
+    .main-content
+      .container
+        .categories
+          .categories__title Категории
+          ul.categories__list
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#tile`)
+                span.category__name Плитка
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#tools`)
+                span.category__name Инструменты
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#paints`)
+                span.category__name Смеси
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#wall`)
+                span.category__name Краски
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#tile`)
+                span.category__name Плитка
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#tools`)
+                span.category__name Инструменты
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#paints`)
+                span.category__name Смеси
+            li.categories__item.category
+              a.category__link(href="#")
+                svg.category__icon
+                  use(xlink:href=`images/sprite.svg#wall`)
+                span.category__name Краски
+
     script(src="scripts/main.bundle.js")
