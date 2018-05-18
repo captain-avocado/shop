@@ -8,6 +8,7 @@
     align-items: center;
     &:hover {
       color: $bg-red;
+      transition: color .2s;
     }
   }
 
