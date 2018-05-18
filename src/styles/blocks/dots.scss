@@ -1,0 +1,33 @@
+.dots {
+
+  display: flex;
+  align-items: center;
+
+  &__item {
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    border-radius: 50%;
+    transition: width .2s, height .2s;
+    
+    &:not(:last-of-type) {
+      margin-right: 25px;
+    }
+
+    &.active {
+      width: 20px;
+      height: 20px;
+      border: 2px solid $white;
+      background-color: transparent;
+      // transition: width .5s;
+    }
+  }
+
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+}

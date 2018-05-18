@@ -52,7 +52,7 @@ block content
             svg.search__icon
               use(xlink:href=`images/sprite.svg#cross`)
     .main-content
-      .container
+      .container.container_main-content
         .categories
           .categories__title Категории
           ul.categories__list
@@ -96,5 +96,31 @@ block content
                 svg.category__icon
                   use(xlink:href=`images/sprite.svg#wall`)
                 span.category__name Краски
-
+        .slider
+          .slider__images
+            ul.slider__list
+              li.slider__item.active
+                img.slider__img(src="images/house.jpg", alt="")
+                .slider__tagline
+                  .slider__text Построй свой дом сам
+                  a(href="#").slider__button Начать сейчас!
+              li.slider__item
+                img.slider__img(src="images/floor.jpg", alt="")
+              li.slider__item
+                img.slider__img(src="images/pile.jpg", alt="")
+              li.slider__item
+                img.slider__img(src="images/wall.jpg", alt="")
+              li.slider__item
+                img.slider__img(src="images/wallpaper.jpg", alt="")
+          ul.slider__dots.dots
+            li.dots__item.active
+              a.dots__link(href="#")
+            li.dots__item
+              a.dots__link(href="#")
+            li.dots__item
+              a.dots__link(href="#")
+            li.dots__item
+              a.dots__link(href="#")
+            li.dots__item
+              a.dots__link(href="#")
     script(src="scripts/main.bundle.js")

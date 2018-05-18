@@ -28,8 +28,14 @@ body {
         height: fit-content;
         min-height: 127.5px;
     }
+
+    &_main-content {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .main-content {
+    height: 100%;
     margin-top: 60px;
 }
