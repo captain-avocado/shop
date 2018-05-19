@@ -14,9 +14,10 @@ module.exports = {
       // }),
       
       new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery'
-    })
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
+        })
     ],
     module: {
         rules: [
@@ -32,6 +33,10 @@ module.exports = {
             options: {
                 fix: true
             }
+          },
+          {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
           }
         ],
       },
