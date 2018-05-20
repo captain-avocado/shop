@@ -45,13 +45,13 @@
           <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
           <li class="menu__item"> <a class="menu__link" href="#">О компании</a></li>
         </ul>
-        <div class="search-row nav__search-row">
+        <form class="search-row nav__search-row">
           <svg class="search-row__icon">
             <use xlink:href="images/sprite.svg#search"></use>
           </svg>
           <input class="search-row__input" type="text" placeholder="Введите ключевое слово">
           <button class="search-row__btn" type="submit" id="search">Поиск</button>
-        </div>
+        </form>
         <div class="search nav__search"><a class="search__link" href="#" id="open">
             <svg class="search__icon">
               <use xlink:href="images/sprite.svg#search"></use>
@@ -63,64 +63,81 @@
     </nav>
     <div class="main-content">
       <div class="container container_main-content">
-        <div class="categories">
-          <div class="categories__title">Категории</div>
-          <ul class="categories__list">
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#tile"></use>
-                </svg><span class="category__name">Плитка</span></a></li>
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#tools"></use>
-                </svg><span class="category__name">Инструменты</span></a></li>
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#paints"></use>
-                </svg><span class="category__name">Смеси</span></a></li>
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#wall"></use>
-                </svg><span class="category__name">Краски</span></a></li>
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#tile"></use>
-                </svg><span class="category__name">Плитка</span></a></li>
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#tools"></use>
-                </svg><span class="category__name">Инструменты</span></a></li>
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#paints"></use>
-                </svg><span class="category__name">Смеси</span></a></li>
-            <li class="categories__item category"><a class="category__link" href="#">
-                <svg class="category__icon">
-                  <use xlink:href="images/sprite.svg#wall"></use>
-                </svg><span class="category__name">Краски</span></a></li>
-          </ul>
-        </div>
-        <div class="slider">
-          <div class="slider__images">
-            <ul class="slider__list">
-              <li class="slider__item active"><img class="slider__img" src="images/house.jpg" alt="">
-                <div class="slider__tagline">
-                  <div class="slider__text">Построй свой дом сам</div><a class="slider__button" href="#">Начать сейчас!</a>
-                </div>
-              </li>
-              <li class="slider__item"><img class="slider__img" src="images/floor.jpg" alt=""></li>
-              <li class="slider__item"><img class="slider__img" src="images/pile.jpg" alt=""></li>
-              <li class="slider__item"><img class="slider__img" src="images/wall.jpg" alt=""></li>
-              <li class="slider__item"><img class="slider__img" src="images/wallpaper.jpg" alt=""></li>
+        <aside class="aside">
+          <div class="categories">
+            <div class="categories__title">Категории</div>
+            <ul class="categories__list">
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#tile"></use>
+                  </svg><span class="category__name">Плитка</span></a></li>
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#tools"></use>
+                  </svg><span class="category__name">Инструменты</span></a></li>
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#paints"></use>
+                  </svg><span class="category__name">Смеси</span></a></li>
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#wall"></use>
+                  </svg><span class="category__name">Краски</span></a></li>
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#tile"></use>
+                  </svg><span class="category__name">Плитка</span></a></li>
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#tools"></use>
+                  </svg><span class="category__name">Инструменты</span></a></li>
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#paints"></use>
+                  </svg><span class="category__name">Смеси</span></a></li>
+              <li class="categories__item category"><a class="category__link" href="#">
+                  <svg class="category__icon">
+                    <use xlink:href="images/sprite.svg#wall"></use>
+                  </svg><span class="category__name">Краски</span></a></li>
             </ul>
           </div>
-          <ul class="slider__dots dots">
-            <li class="dots__item active"><a class="dots__link" href="#"></a></li>
-            <li class="dots__item"><a class="dots__link" href="#"></a></li>
-            <li class="dots__item"><a class="dots__link" href="#"></a></li>
-            <li class="dots__item"><a class="dots__link" href="#"></a></li>
-            <li class="dots__item"><a class="dots__link" href="#"></a></li>
-          </ul>
+          <form class="mail">
+            <div class="mail__text">
+              <div class="mail__title title">Рассылка</div>
+              <div class="mail__descr">Подпишитесь, чтобы оставаться в курсе наших новостей и акций!</div>
+            </div>
+            <div class="mail__input-area">
+              <input class="mail__input" placeholder="E-mail">
+              <svg class="mail__icon">
+                <use xlink:href="images/sprite.svg#mail"></use>
+              </svg>
+            </div>
+            <button class="mail_btn btn" type="submit">Подписаться</button>
+          </form>
+        </aside>
+        <div class="content">
+          <div class="slider">
+            <div class="slider__images">
+              <ul class="slider__list">
+                <li class="slider__item active"><img class="slider__img" src="images/house.jpg" alt="">
+                  <div class="slider__tagline">
+                    <div class="slider__text">Построй свой дом сам</div><a class="slider__button" href="#">Начать сейчас!</a>
+                  </div>
+                </li>
+                <li class="slider__item"><img class="slider__img" src="images/floor.jpg" alt=""></li>
+                <li class="slider__item"><img class="slider__img" src="images/pile.jpg" alt=""></li>
+                <li class="slider__item"><img class="slider__img" src="images/wall.jpg" alt=""></li>
+                <li class="slider__item"><img class="slider__img" src="images/wallpaper.jpg" alt=""></li>
+              </ul>
+            </div>
+            <ul class="slider__dots dots">
+              <li class="dots__item active"><a class="dots__link" href="#"></a></li>
+              <li class="dots__item"><a class="dots__link" href="#"></a></li>
+              <li class="dots__item"><a class="dots__link" href="#"></a></li>
+              <li class="dots__item"><a class="dots__link" href="#"></a></li>
+              <li class="dots__item"><a class="dots__link" href="#"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

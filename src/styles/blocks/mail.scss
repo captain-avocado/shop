@@ -1,0 +1,42 @@
+.mail {
+  
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    color: $text-grey-light;
+    margin-bottom: 30px;
+  }
+
+  &__input-area {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $text-grey-light;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 20px 20px 20px 60px;
+    color: $text-grey-light;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: border-color .2s;
+    background-color: #f6f6f8;
+
+    &:focus {
+      border-color: $bg-red;
+    }
+  }
+
+}

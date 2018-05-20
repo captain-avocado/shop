@@ -39,7 +39,7 @@ block content
             a(href="#").menu__link Доставка и оплата
           li.menu__item 
             a(href="#").menu__link О компании
-        .search-row.nav__search-row
+        form.search-row.nav__search-row
             svg.search-row__icon
               use(xlink:href=`images/sprite.svg#search`)
             input(type="text", placeholder="Введите ключевое слово").search-row__input
@@ -53,74 +53,86 @@ block content
               use(xlink:href=`images/sprite.svg#cross`)
     .main-content
       .container.container_main-content
-        .categories
-          .categories__title Категории
-          ul.categories__list
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#tile`)
-                span.category__name Плитка
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#tools`)
-                span.category__name Инструменты
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#paints`)
-                span.category__name Смеси
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#wall`)
-                span.category__name Краски
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#tile`)
-                span.category__name Плитка
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#tools`)
-                span.category__name Инструменты
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#paints`)
-                span.category__name Смеси
-            li.categories__item.category
-              a.category__link(href="#")
-                svg.category__icon
-                  use(xlink:href=`images/sprite.svg#wall`)
-                span.category__name Краски
-        .slider
-          .slider__images
-            ul.slider__list
-              li.slider__item.active
-                img.slider__img(src="images/house.jpg", alt="")
-                .slider__tagline
-                  .slider__text Построй свой дом сам
-                  a(href="#").slider__button Начать сейчас!
-              li.slider__item
-                img.slider__img(src="images/floor.jpg", alt="")
-              li.slider__item
-                img.slider__img(src="images/pile.jpg", alt="")
-              li.slider__item
-                img.slider__img(src="images/wall.jpg", alt="")
-              li.slider__item
-                img.slider__img(src="images/wallpaper.jpg", alt="")
-          ul.slider__dots.dots
-            li.dots__item.active
-              a.dots__link(href="#")
-            li.dots__item
-              a.dots__link(href="#")
-            li.dots__item
-              a.dots__link(href="#")
-            li.dots__item
-              a.dots__link(href="#")
-            li.dots__item
-              a.dots__link(href="#")
+        aside.aside
+          .categories
+            .categories__title Категории
+            ul.categories__list
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#tile`)
+                  span.category__name Плитка
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#tools`)
+                  span.category__name Инструменты
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#paints`)
+                  span.category__name Смеси
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#wall`)
+                  span.category__name Краски
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#tile`)
+                  span.category__name Плитка
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#tools`)
+                  span.category__name Инструменты
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#paints`)
+                  span.category__name Смеси
+              li.categories__item.category
+                a.category__link(href="#")
+                  svg.category__icon
+                    use(xlink:href=`images/sprite.svg#wall`)
+                  span.category__name Краски
+          form.mail
+            .mail__text
+              .mail__title.title Рассылка
+              .mail__descr Подпишитесь, чтобы оставаться в курсе наших новостей и акций!
+            .mail__input-area
+              input.mail__input(placeholder="E-mail")
+              svg.mail__icon
+                use(xlink:href=`images/sprite.svg#mail`)
+            button(type="submit").mail_btn.btn Подписаться
+        .content
+          .slider
+            .slider__images
+              ul.slider__list
+                li.slider__item.active
+                  img.slider__img(src="images/house.jpg", alt="")
+                  .slider__tagline
+                    .slider__text Построй свой дом сам
+                    a(href="#").slider__button Начать сейчас!
+                li.slider__item
+                  img.slider__img(src="images/floor.jpg", alt="")
+                li.slider__item
+                  img.slider__img(src="images/pile.jpg", alt="")
+                li.slider__item
+                  img.slider__img(src="images/wall.jpg", alt="")
+                li.slider__item
+                  img.slider__img(src="images/wallpaper.jpg", alt="")
+            ul.slider__dots.dots
+              li.dots__item.active
+                a.dots__link(href="#")
+              li.dots__item
+                a.dots__link(href="#")
+              li.dots__item
+                a.dots__link(href="#")
+              li.dots__item
+                a.dots__link(href="#")
+              li.dots__item
+                a.dots__link(href="#")
+        
     script(src="scripts/main.bundle.js")

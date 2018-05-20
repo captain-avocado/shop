@@ -1,0 +1,13 @@
+.btn {
+  padding: 20px 25px;
+  background-color: $bg-red;
+  color: $white;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color .5s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $text-black;
+  }
+}
