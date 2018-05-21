@@ -1,0 +1,12 @@
+.price {
+  font-size: 20px;
+  color: $bg-red;
+
+  &::after {
+    content: "₽";
+    display: block;
+    margin-left: 5px;
+    font-size: 24px;
+    color: $bg-red;
+  }
+}
