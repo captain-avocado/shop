@@ -27,13 +27,14 @@
               <div class="contacts__descr">7 дней в неделю с 9:00 до 19:00</div>
             </li>
           </ul>
-          <div class="cart header__cart"><a class="cart__goods" href="#">
-              <div class="cart__num">2</div>
-              <svg class="cart__icon">
-                <use xlink:href="images/sprite.svg#cart"></use>
-              </svg></a>
-            <div class="cart__descr">Ваша корзина</div>
-          </div>
+          <div class="cart header__cart"><a class="cart__link" href="#">
+              <div class="cart__goods">
+                <div class="cart__num">2</div>
+                <svg class="cart__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </div>
+              <div class="cart__descr">Ваша корзина</div></a></div>
         </div>
       </header>
       <nav class="nav">
@@ -59,7 +60,13 @@
               </svg></a><a class="search__link" href="#" id="close">
               <svg class="search__icon">
                 <use xlink:href="images/sprite.svg#cross"></use>
-              </svg></a></div>
+              </svg></a>
+            <div class="cart search__cart"><a class="cart__goods" href="#" id="nav-cart">
+                <svg class="cart__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+                <div class="cart__num">2</div></a></div>
+          </div>
         </div>
       </nav>
       <div class="main-content">

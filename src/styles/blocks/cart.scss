@@ -3,13 +3,18 @@
   display: flex;
   align-items: center;
 
-  &__goods {
-    display: block;
-    margin-right: 5px;
+  &__link {
+    display: flex;
     &:hover .cart__icon {
       fill: $bg-red;
       transition: fill .2s;
     }
+  }
+
+  &__goods {
+    display: block;
+    margin-right: 10px;
+    width: fit-content;
     position: relative;
   }
 
@@ -19,18 +24,27 @@
     left: 50%;
     transform: translate(0, -90%);
 
+
+
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: $bg-red;
     color: $white;
     text-align: center;
-    line-height: 25px;
+    line-height: 26px;
   }
 
   &__icon {
     width: 25px;
     height: 25px;
+  }
+
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
   }
 
 }

@@ -23,4 +23,26 @@
   opacity: 1;
   transition: opacity .1s;
   fill: $white;
+  &.scrolled {
+    display: none;
+  }
+}
+
+#nav-cart {
+  display: none;
+  margin-right: 0;
+  .cart__num {
+    position: static;
+    transform: translate(0, 0);
+  }
+  &:hover .cart__icon {
+    fill: $bg-red;
+    transition: fill .2s;
+  }
+  &.scrolled {
+    display: flex;
+    .cart__icon {
+      margin-right: 5px;
+    }
+  }
 }

@@ -20,11 +20,12 @@ block content
           li.contacts__row
             .contacts__descr 7 дней в неделю с 9:00 до 19:00
         .cart.header__cart
-          a(href="#").cart__goods
-            .cart__num 2
-            svg.cart__icon
-              use(xlink:href=`images/sprite.svg#cart`)
-          .cart__descr Ваша корзина
+            a(href="#").cart__link
+              .cart__goods
+                .cart__num 2
+                svg.cart__icon
+                  use(xlink:href=`images/sprite.svg#cart`)
+              .cart__descr Ваша корзина
     nav.nav
       .container.container_nav
         ul.menu.nav__list
@@ -52,6 +53,11 @@ block content
           a(href="#").search__link#close
             svg.search__icon
               use(xlink:href=`images/sprite.svg#cross`)
+          .cart.search__cart
+            a(href="#").cart__goods#nav-cart
+              svg.cart__icon
+                use(xlink:href=`images/sprite.svg#cart`)
+              .cart__num 2
     .main-content
       .container.container_main-content
         aside.aside
