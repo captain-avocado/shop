@@ -6,15 +6,12 @@ export default function nav() {
         const menuLinks = document.querySelectorAll('.menu__link');
         const openSearchIcon = document.getElementById('open');
 
-        // const fixedNavBar = navBar.cloneNode(true);
-        // fixedNavBar.classList.add('scrolled');
-        // const wrapper = document.querySelector('.wrapper');
+        const header = document.querySelector('.header');
 
         const cart = document.querySelector('#nav-cart');
 
         if (window.scrollY > 127.5 + 70) {
-
-            // wrapper.insertBefore(fixedNavBar, navBar);
+            header.style.height = 127.5 + 70 + 'px';
 
             navBar.classList.add('scrolled');
             openSearchIcon.classList.add('scrolled');
@@ -23,9 +20,7 @@ export default function nav() {
                 menuLinks[i].classList.add('scrolled');
             }
         } else {
-
-            // document.remove(fixedNavBar);
-            // wrapper.removeChild(fixedNavBar);
+            header.style.height = 127.5 + 'px';
 
             navBar.classList.remove('scrolled');
             openSearchIcon.classList.remove('scrolled');
