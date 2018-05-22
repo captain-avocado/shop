@@ -3,6 +3,7 @@ block head
     title Главная страница
 block variables
 block content
+  .wrapper
     header.header
       .container.container_header
         .logo.header__logo
@@ -226,4 +227,83 @@ block content
                     span.product__name Дверное полотно
                     span.product__price.price 2999
                   a(href="#").product__cart-btn.btn.btn_cart В корзину
+    footer.footer
+      .container.container_footer
+        .footer__advantages
+          ul.advantages
+            li.advantages__item
+              svg.advantages__icon
+                use(xlink:href=`images/sprite.svg#assortment`)
+              .advantages__text
+                .advantages__title.title Ассортимент
+                .advantages__descr В наличии более 5000 наименований
+            li.advantages__item
+              svg.advantages__icon
+                use(xlink:href=`images/sprite.svg#quality`)
+              .advantages__text
+                .advantages__title.title Качество
+                .advantages__descr Гарантия качества продукции
+            li.advantages__item
+              svg.advantages__icon
+                use(xlink:href=`images/sprite.svg#support`)
+              .advantages__text
+                .advantages__title.title Поддержка
+                .advantages__descr Дружелюбная и отзывчивая поддержка
+            li.advantages__item
+              svg.advantages__icon
+                use(xlink:href=`images/sprite.svg#delivery`)
+              .advantages__text
+                .advantages__title.title Доставка
+                .advantages__descr Всегда бесплатная доставка!
+        .footer__info
+          .info
+            .info__right-col
+              .logo.info__logo
+                a(href="#").logo__link
+                  img(src="images/logo.png").logo__icon
+                  .logo__text
+                    .logo__name.logo__name_info дасстрой
+                    .logo__descr.logo__descr_info Внимание к деталям
+              ul.socials
+                li.socials__item
+                  a.socials__link(href="#")
+                    svg.socials__icon
+                      use(xlink:href=`images/sprite.svg#vk`)
+                li.socials__item
+                  a.socials__link(href="#")
+                    svg.socials__icon
+                      use(xlink:href=`images/sprite.svg#fb`)
+                li.socials__item
+                  a.socials__link(href="#")
+                    svg.socials__icon
+                      use(xlink:href=`images/sprite.svg#inst`)
+            .info__left-col
+              .about-info
+                .about-info__title.title.title_info Информация
+                ul.about-info__list
+                  li.about-info__item 
+                    a(href="#").about-info__link О нас
+                  li.about-info__item  
+                    a(href="#").about-info__link Доставка и оплата
+                  li.about-info__item   
+                    a(href="#").about-info__link Связаться с нами
+                  li.about-info__item   
+                    a(href="#").about-info__link Карта сайта
+                  li.about-info__item   
+                    a(href="#").about-info__link Отзывы
+              .about-contacts
+                .about-contacts__title.title.title_info Контакты
+                ul.about-contacts__list
+                  li.about-contacts__item Адрес: ул.Профессора Попова, д.1
+                  li.about-contacts__item Санкт-Петербург
+                  li.about-contacts__item Телефон: +7 (800) 555-35-35
+                  li.about-contacts__item 7 дней в неделю с 9:00 до 19:00
+                  li.about-contacts__item.email
+                    span.email__text E-mail: 
+                    a(href="#").email__mail info@dasstroi.com
+
+
+    .copyright
+      span.copyright__name ДАССТРОЙ © 2018.
+      span.copyright__rights Все права сохранены
     script(src="scripts/main.bundle.js")

@@ -1,0 +1,17 @@
+.copyright {
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+
+  &__name {
+    color: $text-grey-light;
+
+    margin-right: 10px;
+  }
+
+  &__rights {
+    color: $bg-red;
+  }
+}

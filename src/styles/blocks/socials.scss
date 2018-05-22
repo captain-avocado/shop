@@ -1,0 +1,56 @@
+.socials {
+
+  display: flex;
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    &:hover {
+      .socials__icon {
+        fill: $white;
+      }
+      &:before {
+        border-color: $white;
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 1px solid #C2C2C2;
+      transition: border-color .5s;
+    }
+
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #C2C2C2;
+    transition: fill .5s;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+
+}

@@ -8,209 +8,303 @@
     <title>Главная страница</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container container_header">
-        <div class="logo header__logo"><a class="logo__link" href="#"><img class="logo__icon" src="images/logo.png">
-            <div class="logo__text">
-              <div class="logo__name">дасстрой</div>
-              <div class="logo__descr">Внимание к деталям</div>
-            </div></a></div>
-        <ul class="contacts header__contacts">
-          <li class="contacts__row">
-            <svg class="contacts__icon">
-              <use xlink:href="images/sprite.svg#phone"></use>
-            </svg>
-            <div class="contacts__number">+7 (800) 555-35-35</div>
-          </li>
-          <li class="contacts__row">
-            <div class="contacts__descr">7 дней в неделю с 9:00 до 19:00</div>
-          </li>
-        </ul>
-        <div class="cart header__cart"><a class="cart__goods" href="#">
-            <div class="cart__num">2</div>
-            <svg class="cart__icon">
-              <use xlink:href="images/sprite.svg#cart"></use>
-            </svg></a>
-          <div class="cart__descr">Ваша корзина</div>
-        </div>
-      </div>
-    </header>
-    <nav class="nav">
-      <div class="container container_nav">
-        <ul class="menu nav__list">
-          <li class="menu__item"> <a class="menu__link" href="#">Главная</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Товары</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Бренды</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
-          <li class="menu__item"> <a class="menu__link" href="#">О компании</a></li>
-        </ul>
-        <form class="search-row nav__search-row">
-          <svg class="search-row__icon">
-            <use xlink:href="images/sprite.svg#search"></use>
-          </svg>
-          <input class="search-row__input" type="text" placeholder="Введите ключевое слово">
-          <button class="search-row__btn" type="submit" id="search">Поиск</button>
-        </form>
-        <div class="search nav__search"><a class="search__link" href="#" id="open">
-            <svg class="search__icon">
-              <use xlink:href="images/sprite.svg#search"></use>
-            </svg></a><a class="search__link" href="#" id="close">
-            <svg class="search__icon">
-              <use xlink:href="images/sprite.svg#cross"></use>
-            </svg></a></div>
-      </div>
-    </nav>
-    <div class="main-content">
-      <div class="container container_main-content">
-        <aside class="aside">
-          <div class="categories aside__categories">
-            <div class="categories__title">Категории</div>
-            <ul class="categories__list">
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#tile"></use>
-                  </svg><span class="category__name">Плитка</span></a></li>
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#tools"></use>
-                  </svg><span class="category__name">Инструменты</span></a></li>
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#paints"></use>
-                  </svg><span class="category__name">Смеси</span></a></li>
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#wall"></use>
-                  </svg><span class="category__name">Краски</span></a></li>
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#tile"></use>
-                  </svg><span class="category__name">Плитка</span></a></li>
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#tools"></use>
-                  </svg><span class="category__name">Инструменты</span></a></li>
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#paints"></use>
-                  </svg><span class="category__name">Смеси</span></a></li>
-              <li class="categories__item category"><a class="category__link" href="#">
-                  <svg class="category__icon">
-                    <use xlink:href="images/sprite.svg#wall"></use>
-                  </svg><span class="category__name">Краски</span></a></li>
-            </ul>
-          </div>
-          <form class="mail">
-            <div class="mail__text">
-              <div class="mail__title title">Рассылка</div>
-              <div class="mail__descr">Подпишитесь, чтобы оставаться в курсе наших новостей и акций!</div>
-            </div>
-            <div class="mail__input-area">
-              <input class="mail__input" placeholder="E-mail">
-              <svg class="mail__icon">
-                <use xlink:href="images/sprite.svg#mail"></use>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container container_header">
+          <div class="logo header__logo"><a class="logo__link" href="#"><img class="logo__icon" src="images/logo.png">
+              <div class="logo__text">
+                <div class="logo__name">дасстрой</div>
+                <div class="logo__descr">Внимание к деталям</div>
+              </div></a></div>
+          <ul class="contacts header__contacts">
+            <li class="contacts__row">
+              <svg class="contacts__icon">
+                <use xlink:href="images/sprite.svg#phone"></use>
               </svg>
-            </div>
-            <button class="mail_btn btn" type="submit">Подписаться</button>
+              <div class="contacts__number">+7 (800) 555-35-35</div>
+            </li>
+            <li class="contacts__row">
+              <div class="contacts__descr">7 дней в неделю с 9:00 до 19:00</div>
+            </li>
+          </ul>
+          <div class="cart header__cart"><a class="cart__goods" href="#">
+              <div class="cart__num">2</div>
+              <svg class="cart__icon">
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg></a>
+            <div class="cart__descr">Ваша корзина</div>
+          </div>
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="container container_nav">
+          <ul class="menu nav__list">
+            <li class="menu__item"> <a class="menu__link" href="#">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Товары</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Бренды</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+            <li class="menu__item"> <a class="menu__link" href="#">О компании</a></li>
+          </ul>
+          <form class="search-row nav__search-row">
+            <svg class="search-row__icon">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+            <input class="search-row__input" type="text" placeholder="Введите ключевое слово">
+            <button class="search-row__btn" type="submit" id="search">Поиск</button>
           </form>
-        </aside>
-        <div class="content">
-          <div class="slider content__slider">
-            <div class="slider__images">
-              <ul class="slider__list">
-                <li class="slider__item active"><img class="slider__img" src="images/house.jpg" alt="">
-                  <div class="slider__tagline">
-                    <div class="slider__text">Построй свой дом сам</div><a class="slider__button" href="#">Начать сейчас!</a>
-                  </div>
-                </li>
-                <li class="slider__item"><img class="slider__img" src="images/floor.jpg" alt=""></li>
-                <li class="slider__item"><img class="slider__img" src="images/pile.jpg" alt=""></li>
-                <li class="slider__item"><img class="slider__img" src="images/wall.jpg" alt=""></li>
-                <li class="slider__item"><img class="slider__img" src="images/wallpaper.jpg" alt=""></li>
+          <div class="search nav__search"><a class="search__link" href="#" id="open">
+              <svg class="search__icon">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg></a><a class="search__link" href="#" id="close">
+              <svg class="search__icon">
+                <use xlink:href="images/sprite.svg#cross"></use>
+              </svg></a></div>
+        </div>
+      </nav>
+      <div class="main-content">
+        <div class="container container_main-content">
+          <aside class="aside">
+            <div class="categories aside__categories">
+              <div class="categories__title">Категории</div>
+              <ul class="categories__list">
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#tile"></use>
+                    </svg><span class="category__name">Плитка</span></a></li>
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#tools"></use>
+                    </svg><span class="category__name">Инструменты</span></a></li>
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#paints"></use>
+                    </svg><span class="category__name">Смеси</span></a></li>
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#wall"></use>
+                    </svg><span class="category__name">Краски</span></a></li>
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#tile"></use>
+                    </svg><span class="category__name">Плитка</span></a></li>
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#tools"></use>
+                    </svg><span class="category__name">Инструменты</span></a></li>
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#paints"></use>
+                    </svg><span class="category__name">Смеси</span></a></li>
+                <li class="categories__item category"><a class="category__link" href="#">
+                    <svg class="category__icon">
+                      <use xlink:href="images/sprite.svg#wall"></use>
+                    </svg><span class="category__name">Краски</span></a></li>
               </ul>
             </div>
-            <ul class="slider__dots dots">
-              <li class="dots__item active"><a class="dots__link" href="#"></a></li>
-              <li class="dots__item"><a class="dots__link" href="#"></a></li>
-              <li class="dots__item"><a class="dots__link" href="#"></a></li>
-              <li class="dots__item"><a class="dots__link" href="#"></a></li>
-              <li class="dots__item"><a class="dots__link" href="#"></a></li>
-            </ul>
-          </div>
-          <div class="goods">
-            <div class="goods__title title">Новинки</div>
-            <ul class="goods__list">
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999
-                      <div class="price__icon"></div></span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-              <li class="goods__item product">
-                <div class="product__top-area">
-                  <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
-                </div>
-                <div class="product__bottom-area">
-                  <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
-                </div>
-              </li>
-            </ul>
+            <form class="mail">
+              <div class="mail__text">
+                <div class="mail__title title">Рассылка</div>
+                <div class="mail__descr">Подпишитесь, чтобы оставаться в курсе наших новостей и акций!</div>
+              </div>
+              <div class="mail__input-area">
+                <input class="mail__input" placeholder="E-mail">
+                <svg class="mail__icon">
+                  <use xlink:href="images/sprite.svg#mail"></use>
+                </svg>
+              </div>
+              <button class="mail_btn btn" type="submit">Подписаться</button>
+            </form>
+          </aside>
+          <div class="content">
+            <div class="slider content__slider">
+              <div class="slider__images">
+                <ul class="slider__list">
+                  <li class="slider__item active"><img class="slider__img" src="images/house.jpg" alt="">
+                    <div class="slider__tagline">
+                      <div class="slider__text">Построй свой дом сам</div><a class="slider__button" href="#">Начать сейчас!</a>
+                    </div>
+                  </li>
+                  <li class="slider__item"><img class="slider__img" src="images/floor.jpg" alt=""></li>
+                  <li class="slider__item"><img class="slider__img" src="images/pile.jpg" alt=""></li>
+                  <li class="slider__item"><img class="slider__img" src="images/wall.jpg" alt=""></li>
+                  <li class="slider__item"><img class="slider__img" src="images/wallpaper.jpg" alt=""></li>
+                </ul>
+              </div>
+              <ul class="slider__dots dots">
+                <li class="dots__item active"><a class="dots__link" href="#"></a></li>
+                <li class="dots__item"><a class="dots__link" href="#"></a></li>
+                <li class="dots__item"><a class="dots__link" href="#"></a></li>
+                <li class="dots__item"><a class="dots__link" href="#"></a></li>
+                <li class="dots__item"><a class="dots__link" href="#"></a></li>
+              </ul>
+            </div>
+            <div class="goods">
+              <div class="goods__title title">Новинки</div>
+              <ul class="goods__list">
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999
+                        <div class="price__icon"></div></span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+                <li class="goods__item product">
+                  <div class="product__top-area">
+                    <div class="product__code"><span class="product__code-text">Код </span><span class="product__code-num">123123</span></div><img class="product__img" src="images/dver.png" alt="">
+                  </div>
+                  <div class="product__bottom-area">
+                    <div class="product__text"><span class="product__name">Дверное полотно</span><span class="product__price price">2999</span></div><a class="product__cart-btn btn btn_cart" href="#">В корзину</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="container container_footer">
+          <div class="footer__advantages">
+            <ul class="advantages">
+              <li class="advantages__item">
+                <svg class="advantages__icon">
+                  <use xlink:href="images/sprite.svg#assortment"></use>
+                </svg>
+                <div class="advantages__text">
+                  <div class="advantages__title title">Ассортимент</div>
+                  <div class="advantages__descr">В наличии более 5000 наименований</div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__icon">
+                  <use xlink:href="images/sprite.svg#quality"></use>
+                </svg>
+                <div class="advantages__text">
+                  <div class="advantages__title title">Качество</div>
+                  <div class="advantages__descr">Гарантия качества продукции</div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__icon">
+                  <use xlink:href="images/sprite.svg#support"></use>
+                </svg>
+                <div class="advantages__text">
+                  <div class="advantages__title title">Поддержка</div>
+                  <div class="advantages__descr">Дружелюбная и отзывчивая поддержка</div>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__icon">
+                  <use xlink:href="images/sprite.svg#delivery"></use>
+                </svg>
+                <div class="advantages__text">
+                  <div class="advantages__title title">Доставка</div>
+                  <div class="advantages__descr">Всегда бесплатная доставка!</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <div class="info">
+              <div class="info__right-col">
+                <div class="logo info__logo"><a class="logo__link" href="#"><img class="logo__icon" src="images/logo.png">
+                    <div class="logo__text">
+                      <div class="logo__name logo__name_info">дасстрой</div>
+                      <div class="logo__descr logo__descr_info">Внимание к деталям</div>
+                    </div></a></div>
+                <ul class="socials">
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__icon">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__icon">
+                        <use xlink:href="images/sprite.svg#fb"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="#">
+                      <svg class="socials__icon">
+                        <use xlink:href="images/sprite.svg#inst"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="info__left-col">
+                <div class="about-info">
+                  <div class="about-info__title title title_info">Информация</div>
+                  <ul class="about-info__list">
+                    <li class="about-info__item"> <a class="about-info__link" href="#">О нас</a></li>
+                    <li class="about-info__item"> <a class="about-info__link" href="#">Доставка и оплата</a></li>
+                    <li class="about-info__item">  <a class="about-info__link" href="#">Связаться с нами</a></li>
+                    <li class="about-info__item">  <a class="about-info__link" href="#">Карта сайта</a></li>
+                    <li class="about-info__item">  <a class="about-info__link" href="#">Отзывы</a></li>
+                  </ul>
+                </div>
+                <div class="about-contacts">
+                  <div class="about-contacts__title title title_info">Контакты</div>
+                  <ul class="about-contacts__list">
+                    <li class="about-contacts__item">Адрес: ул.Профессора Попова, д.1</li>
+                    <li class="about-contacts__item">Санкт-Петербург</li>
+                    <li class="about-contacts__item">Телефон: +7 (800) 555-35-35</li>
+                    <li class="about-contacts__item">7 дней в неделю с 9:00 до 19:00</li>
+                    <li class="about-contacts__item email"><span class="email__text">E-mail: </span><a class="email__mail" href="#">info@dasstroi.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright"><span class="copyright__name">ДАССТРОЙ © 2018.</span><span class="copyright__rights">Все права сохранены</span></div>
+      <script src="scripts/main.bundle.js"></script>
     </div>
-    <script src="scripts/main.bundle.js"></script>
   </body>
 </html>

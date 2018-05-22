@@ -1,0 +1,44 @@
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    margin-bottom: 35px;
+  }
+
+  &__left-col {
+    display: flex;
+  }
+
+}
+
+.about-info {
+  margin-right: 200px;
+}
+
+.about-info, .about-contacts {
+  color: $text-grey-light;
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__item {
+    margin-bottom: 5px;
+  }
+  &__link {
+    transition: color .5s;
+    &:hover {
+        color: $bg-red;
+    }
+  }
+}
+
+.email {
+  &__mail {
+    color: $bg-red;
+    transition: color .5s;
+    &:hover {
+      color: $white;
+    }
+  }
+}

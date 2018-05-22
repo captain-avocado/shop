@@ -1,0 +1,27 @@
+.footer {
+
+  background-color: $text-black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &__advantages {
+    padding: 50px 0;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #979797;
+  }
+
+  &__info {
+    padding: 50px 0;
+
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

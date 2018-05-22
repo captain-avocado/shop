@@ -1,0 +1,45 @@
+.advantages {
+  width: 100%;
+  display: flex;
+
+  &__item {
+    flex: 1;
+    &:not(:last-of-type) {
+      margin-right: 60px;
+    }
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+      .advantages__title {
+        letter-spacing: .5px;
+        color: $bg-red;
+      }
+      .advantages__descr {
+        color: $white;
+      }
+    }
+
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: $bg-red;
+
+    margin-right: 20px;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: $white;
+    transition: color .5s, letter-spacing .5s;
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    font-size: 14px;
+    color: #888;
+    transition: color .5s;
+  }
+}

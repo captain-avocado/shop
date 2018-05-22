@@ -23,11 +23,21 @@
     color: $black;
     font-size: 24px;
     font-weight: 500;
+
+    &_info {
+      color: $white;
+    }
+
   }
 
   &__descr {
     color: $text-grey-light;
     font-size: 14px;
+
+    &_info {
+      color: #888;
+    }
+
   }
 
 }
