@@ -12,7 +12,7 @@ export default function nav() {
 
         if (window.scrollY > 127.5 + 70) {
             header.style.height = 127.5 + 70 + 'px';
-
+            
             navBar.classList.add('scrolled');
             openSearchIcon.classList.add('scrolled');
             cart.classList.add('scrolled');
