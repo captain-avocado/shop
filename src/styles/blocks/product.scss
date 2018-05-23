@@ -6,6 +6,11 @@
   border: 1px solid #E0E0E0;
   padding: 15px;
 
+  &__name {
+    margin-bottom: auto;
+    text-align: center;
+  }
+
   &__img {
     // min-width: 100%;
     max-height: 190px;
@@ -16,6 +21,8 @@
   &__code {
     color: $text-grey-light;
     margin-bottom: 15px;
+
+    font-size: 13px;
   }
 
   &__cart-btn {
