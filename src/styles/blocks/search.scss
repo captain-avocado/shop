@@ -29,7 +29,7 @@
 }
 
 #nav-cart {
-  display: none;
+  // display: none;
   margin-right: 0;
   .cart__num {
     position: static;
@@ -39,10 +39,8 @@
     fill: $bg-red;
     transition: fill .2s;
   }
-  &.scrolled {
     display: flex;
     .cart__icon {
       margin-right: 5px;
     }
-  }
 }

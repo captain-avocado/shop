@@ -1,7 +1,7 @@
 export default function search() {
 
     const searchIcon = document.getElementById('open');
-    const menu = document.querySelector('.menu');
+    const menu = document.getElementById('menu');
     const searchRow = document.querySelector('.search-row');
     const closeIcon = document.getElementById('close');
 

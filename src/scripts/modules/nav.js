@@ -2,33 +2,23 @@ export default function nav() {
 
     document.addEventListener('scroll', e => {
 
-        const navBar = document.querySelector('.nav');
-        const menuLinks = document.querySelectorAll('.menu__link');
-        const openSearchIcon = document.getElementById('open');
-
-        const header = document.querySelector('.header');
-
-        const cart = document.querySelector('#nav-cart');
-
+        const navBar = document.querySelector('.nav_scrolled');
         if (window.scrollY > 127.5 + 70) {
-            header.style.height = 127.5 + 70 + 'px';
-            
-            navBar.classList.add('scrolled');
-            openSearchIcon.classList.add('scrolled');
-            cart.classList.add('scrolled');
-            for (let i = 0; i < menuLinks.length; i++) {
-                menuLinks[i].classList.add('scrolled');
-            }
+            navBar.classList.add('active');
+            setTimeout(() => {
+                navBar.style.opacity = '1';
+            }, 50);
+            // navBar.style.opacity = '1';
         } else {
-            header.style.height = 127.5 + 'px';
-
-            navBar.classList.remove('scrolled');
-            openSearchIcon.classList.remove('scrolled');
-            cart.classList.remove('scrolled');
-            for (let i = 0; i < menuLinks.length; i++) {
-                menuLinks[i].classList.remove('scrolled');
-            }
+            navBar.classList.remove('active');
+            navBar.style.opacity = '0';
         }
     });
+
+    // navBar.addEventListener('transitionend', e => {
+    //     if (navBar = e.target) {
+    //         navBar.classList.remove('active');
+    //     }
+    // });
 
 }

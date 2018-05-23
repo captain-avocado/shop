@@ -4,6 +4,26 @@ block head
 block variables
 block content
   .wrapper
+    .nav.nav_scrolled
+      .container.container_nav
+        ul.menu.nav__list
+          li.menu__item 
+            a(href="#").menu__link.menu__link_scrolled Главная
+          li.menu__item
+            a(href="#").menu__link.menu__link_scrolled Услуги
+          li.menu__item
+            a(href="#").menu__link.menu__link_scrolled Товары
+          li.menu__item
+            a(href="#").menu__link.menu__link_scrolled Бренды
+          li.menu__item
+            a(href="#").menu__link.menu__link_scrolled Доставка и оплата
+          li.menu__item 
+            a(href="#").menu__link.menu__link_scrolled О компании
+        .cart.search__cart
+            a(href="#").cart__goods#nav-cart
+              svg.cart__icon
+                use(xlink:href=`images/sprite.svg#cart`)
+              .cart__num 2
     header.header
       .container.container_header
         .logo.header__logo
@@ -28,7 +48,7 @@ block content
               .cart__descr Ваша корзина
     nav.nav
       .container.container_nav
-        ul.menu.nav__list
+        ul.menu.nav__list#menu
           li.menu__item 
             a(href="#").menu__link Главная
           li.menu__item
@@ -53,11 +73,6 @@ block content
           a(href="#").search__link#close
             svg.search__icon
               use(xlink:href=`images/sprite.svg#cross`)
-          .cart.search__cart
-            a(href="#").cart__goods#nav-cart
-              svg.cart__icon
-                use(xlink:href=`images/sprite.svg#cart`)
-              .cart__num 2
     .main-content
       .container.container_main-content
         aside.aside
