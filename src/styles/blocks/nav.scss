@@ -3,10 +3,11 @@
   display: flex;
   justify-content: center;
 
-  min-height: 70.5px;
+  // min-height: 70.5px;
+  height: 70px;
   background-color: $bg-red;
 
-  height: fit-content;
+  // height: fit-content;
 
   &__search-row {
     margin-right: 20px;
