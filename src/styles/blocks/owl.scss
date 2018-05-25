@@ -1,9 +1,75 @@
+.owl-wrapper {
+  height: 570px;
+  margin-bottom: 120px;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 2px;
+}
+
 .owl-carousel {
+  height: 570px;
+  
   &__item {
-    height: 700px;
+    // height: 70vh;
+    height: 570px;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $black;
+      opacity: .3;
+    }
+
   }
+
+  &__tagline {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translate(0, 0%);
+    z-index: 1000;
+    color: $white;
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    max-width: 270px;
+    white-space: normal;
+  }
+
+  &__button {
+    padding: 20px;
+    background-color: $bg-red;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color .5s;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    &:hover {
+      background-color: $text-black
+    }
+  }
+
   & img {
+    width: auto !important;
     min-height: 100%;
     min-width: 100%;
   }
+
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1000;
 }

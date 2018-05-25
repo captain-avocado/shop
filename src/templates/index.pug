@@ -129,46 +129,31 @@ block content
                 use(xlink:href=`images/sprite.svg#mail`)
             button(type="submit").mail_btn.btn Подписаться
         .content
-          ul.owl-carousel.bg-cover
-            li.owl-carousel__item
-              img(src="images/house.jpg")
-              .slider__tagline
-                .slider__text Построй свой дом сам
-                a(href="#").slider__button Начать сейчас!
-            li.owl-carousel__item
-              img.owl-carousel__img(src="images/floor.jpg")
-            li.owl-carousel__item
-              img.owl-carousel__img(src="images/pile.jpg")
-            li.owl-carousel__item
-              img.owl-carousel__img(src="images/wall.jpg")
-            li.owl-carousel__item
-              img.owl-carousel__img(src="images/wallpaper.jpg")
-          //- .slider.content__slider
-            .slider__images
-              ul.slider__list
-                li.slider__item.active
-                  img.slider__img(src="images/house.jpg", alt="")
-                  .slider__tagline
-                    .slider__text Построй свой дом сам
-                    a(href="#").slider__button Начать сейчас!
-                li.slider__item
-                  img.slider__img(src="images/floor.jpg", alt="")
-                li.slider__item
-                  img.slider__img(src="images/pile.jpg", alt="")
-                li.slider__item
-                  img.slider__img(src="images/wall.jpg", alt="")
-                li.slider__item
-                  img.slider__img(src="images/wallpaper.jpg", alt="")
-            ul.slider__dots.dots
-              li.dots__item.active
+          .owl-wrapper
+            ul.owl-carousel.owl-theme.content__slider
+              li.owl-carousel__item
+                img(src="images/house.jpg")
+                .owl-carousel__tagline
+                  .owl-carousel__text Построй свой дом сам
+                  a(href="#").owl-carousel__button Начать сейчас!
+              li.owl-carousel__item
+                img.owl-carousel__img(src="images/floor.jpg")
+              li.owl-carousel__item
+                img.owl-carousel__img(src="images/pile.jpg")
+              li.owl-carousel__item
+                img.owl-carousel__img(src="images/wall.jpg")
+              li.owl-carousel__item
+                img.owl-carousel__img(src="images/wallpaper.jpg")
+            ul.owl-dots#owl-dots.dots
+              li.owl-dot.dots__item
                 a.dots__link(href="#")
-              li.dots__item
+              li.owl-dot.dots__item
                 a.dots__link(href="#")
-              li.dots__item
+              li.owl-dot.dots__item
                 a.dots__link(href="#")
-              li.dots__item
+              li.owl-dot.dots__item
                 a.dots__link(href="#")
-              li.dots__item
+              li.owl-dot.dots__item
                 a.dots__link(href="#")
           .goods
             .goods__title.title Новинки
@@ -178,7 +163,8 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/dver.png", alt="")
+                  a(href="#").product__link
+                    img.product__img(src="images/dver.png", alt="")
                 .product__name Дверное полотно
                 .product__bottom-area
                   .product__text
@@ -189,7 +175,8 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/pile.jpg", alt="")
+                  a(href="#").product__link
+                    img.product__img(src="images/dver.png", alt="")
                 .product__name Дверное полотно
                 .product__bottom-area
                   .product__text
@@ -200,7 +187,8 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/dver.png", alt="")
+                  a(href="#").product__link
+                    img.product__img(src="images/dver.png", alt="")
                 .product__name Дверное полотно
                 .product__bottom-area
                   .product__text
@@ -211,7 +199,8 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/dver.png", alt="")
+                  a(href="#").product__link
+                    img.product__img(src="images/dver.png", alt="")
                 .product__name Дверное полотно
                 .product__bottom-area
                   .product__text
@@ -222,7 +211,8 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/dver.png", alt="")
+                  a(href="#").product__link
+                    img.product__img(src="images/dver.png", alt="")
                 .product__name Дверное полотно
                 .product__bottom-area
                   .product__text
@@ -233,7 +223,8 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/dver.png", alt="")
+                  a(href="#").product__link
+                    img.product__img(src="images/dver.png", alt="")
                 .product__name Дверное полотно
                 .product__bottom-area
                   .product__text
@@ -244,7 +235,8 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/dver.png", alt="")
+                  a(href="#").product__link
+                    img.product__img(src="images/pile.jpg", alt="")
                 .product__name Дверное полотно
                 .product__bottom-area
                   .product__text
@@ -256,8 +248,9 @@ block content
                   .product__code
                     span.product__code-text Код 
                     span.product__code-num 123123
-                  img.product__img(src="images/dver.png", alt="")
-                .product__name Дверное полотно
+                  a(href="#").product__link
+                    img.product__img(src="images/dver.png", alt="")
+                .product__name Дверное полотно feffee feffeefeffefe fefefefeef ffff  ff
                 .product__bottom-area
                   .product__text
                     span.product__price.price 2999
