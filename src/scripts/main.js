@@ -28,6 +28,44 @@ $(document).ready(function(){
         //     },
         // },
     });
+
+    // $('.owl-carousel').each(function () {
+    //     var $this = $(this);
+    
+    //     $this.owlCarousel({
+    //         afterUpdate: function () {
+    //             updateSize($this);
+    //         },
+    //         afterInit: function () {
+    //             updateSize($this);
+    //         },
+    //     });
+    // });
+    
+    // function updateSize($carousel) {
+    //     var maxHeight = 0;
+    
+    //     $('.owl-item', $carousel).each(function () {
+    //         var $this = $(this);
+    //         var $image = $this.find('img');
+    
+    //         //Max height
+    //         var prevHeight = $this.height();
+    //         var thisHeight = $this.height('auto').height();
+    //         $this.height(prevHeight);
+    //         maxHeight = (maxHeight > thisHeight ? maxHeight : thisHeight);
+    
+    //         //Set image as background
+    //         var imageSource = $image.attr('src');
+    //         $this.css('backgroundImage', 'url(' + imageSource + ')');
+    //     });
+    
+    //     //Set equal height
+    //     $('.owl-item', $carousel).height(maxHeight);
+    // }
+
+    
+
 });
 
 search();
